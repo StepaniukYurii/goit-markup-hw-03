@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -12,14 +13,16 @@
 <body>
     <header class="header">
         <nav>
-            <a class="webstudio-logo" href="./index.html">Web<span class="studio-logo">Studio</span></a>
-            <ul class="ul header-menu-portfolio">
-                <li><a class="nav-link" href="./index.html">Студія</a></li>
-                <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="nav-link" href="#">Контакти</a></li>
-            </ul>
+            <div class="header-container">  
+                <a class="webstudio-logo" href="./index.html">Web<span class="studio-logo">Studio</span></a>             
+                <ul class="ul header-menu-portfolio">
+                    <li><a class="nav-link" href="./index.html">Студія</a></li>
+                    <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="nav-link" href="#">Контакти</a></li>
+                </ul>
+            </div>
         </nav>
-        <ul class="ul contact-list">
+        <ul class="ul header-contact-list">
             <li><a class="header-contact-link nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="header-contact-link nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -86,11 +89,13 @@
     </main>
     <footer class="footer">
         <a class="webstudio-logo" href="./index.html">Web<span class="studio-logo-footer">Studio</span></a>
-        <address class="address-info">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="ul contact-list">
-            <li><a class="footer-contact-link nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="footer-contact-link nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="list-footer-container">
+            <address class="address-info">м. Київ, пр-т Лесі Українки, 26</address>
+            <ul class="ul footer-contact-list">
+                <li><a class="footer-contact-link nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="footer-contact-link nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

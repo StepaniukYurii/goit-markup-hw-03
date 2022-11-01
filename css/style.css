@@ -14,16 +14,32 @@ body {
   background-color: var(--background-color);
   letter-spacing: 0.03em;
   font-size: 14px;
+  height: 100%;
+}
+p h3 {
+  margin: 0;
+  padding: 0;
 }
 .ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 80px;
   line-height: 1.14;
+  border-bottom: solid #ececec;
   background-color: var(--background-color);
 }
-
+.header-container {
+  align-items: center;
+  display: flex;
+}
 .webstudio-logo {
+  margin-left: 215px;
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
@@ -35,6 +51,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: #000000;
+}
+.header-menu-studio {
+  gap: 50px;
+  margin-left: 93px;
+  display: flex;
 }
 .nav-link {
   letter-spacing: 0.02em;
@@ -48,9 +69,15 @@ body {
   border-radius: 4px;
 }
 .header-menu-portfolio {
+  gap: 50px;
+  margin-left: 93px;
+  display: flex;
   letter-spacing: 0.02em;
 }
-.contact-list {
+.header-contact-list {
+  gap: 50px;
+  margin-right: 215px;
+  display: flex;
   letter-spacing: 0.02em;
 }
 .header-contact-link {
@@ -59,9 +86,14 @@ body {
   color: var(--text-color);
 }
 .hero-section {
+  padding-bottom: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 200px;
   background: var(--secondary-background-color);
 }
 .hero-tittle {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -80,6 +112,11 @@ body {
   border-style: hidden;
 }
 .buttons-portfolio {
+  gap: 8px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  justify-content: center;
+  display: flex;
   line-height: 1.62;
 }
 .buttons-portfolio .button:hover,
@@ -105,6 +142,7 @@ body {
   background: var(--accent-color);
 }
 .b-order {
+  margin: 0;
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: 700;
@@ -131,6 +169,15 @@ body {
 .hidden-tittle {
   display: none;
 }
+.hero-list {
+  margin-top: 109px;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
+.description-block {
+  width: 270px;
+}
 .description-title {
   font-size: 14px;
   text-transform: uppercase;
@@ -140,12 +187,32 @@ body {
   line-height: 1.71;
   color: var(--text-color);
 }
+.info-tittle {
+  margin-top: 94px;
+}
 .section-tittle {
+  text-align: center;
   font-size: 36px;
   line-height: 1.16;
 }
+.info-images {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 .team-section {
   background-color: var(--button-background-color);
+}
+.team-tittle {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.list-team {
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .team-block {
   width: 270px;
@@ -156,14 +223,30 @@ body {
   background-color: var(--background-color);
 }
 .team-name {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .team-position {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   color: var(--text-color);
+}
+.list-portfolio {
+  flex-basis: calc((100% - 60px) / 3);
+  justify-content: center;
+  margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.block-portfolio {
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
 }
 .title-portfolio {
   font-size: 18px;
@@ -175,14 +258,19 @@ body {
   line-height: 1.87;
   color: var(--text-color);
 }
-.block-portfolio {
-  width: 370px;
-  height: 404px;
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
-}
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 252px;
   background-color: var(--secondary-background-color);
+}
+.list-footer-container {
+  padding-top: 20px;
+  gap: 9px;
+  margin-left: 215px;
+}
+.footer-contact-list {
+  letter-spacing: 0.02em;
 }
 .footer-contact-link {
   letter-spacing: 0.03em;
@@ -198,4 +286,7 @@ body {
   line-height: 1.71;
   font-style: normal;
   color: var(--background-color);
+}
+.button-div {
+  text-align: center;
 }
