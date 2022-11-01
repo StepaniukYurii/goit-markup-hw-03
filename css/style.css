@@ -16,14 +16,25 @@ body {
   font-size: 14px;
 }
 .ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .header {
+  border-bottom: solid #ececec;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  display: flex;
   line-height: 1.14;
   background-color: var(--background-color);
 }
-
+.header-container {
+  align-items: center;
+  display: flex;
+}
 .webstudio-logo {
+  margin-left: 215px;
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
@@ -42,6 +53,8 @@ body {
   color: var(--main-text-color);
 }
 .header-menu-studio {
+  margin-left: 93px;
+  display: flex;
   letter-spacing: 0.02em;
 }
 .nav-link:focus,
@@ -50,27 +63,35 @@ body {
   border-radius: 4px;
 }
 .header-menu-portfolio {
+  margin-left: 93px;
+  display: flex;
   letter-spacing: 0.02em;
 }
 .portfolio {
+  padding-left: 50px;
   font-weight: 500;
   text-decoration: none;
   color: var(--main-text-color);
 }
 .contacts {
+  padding-left: 50px;
   font-weight: 500;
   text-decoration: none;
   color: var(--main-text-color);
 }
 .contact-list {
+  margin-right: 215px;
+  display: flex;
   letter-spacing: 0.02em;
 }
 .header-contact-link {
+  padding-right: 50px;
   font-weight: 500;
   text-decoration: none;
   color: var(--text-color);
 }
 .hero-section {
+  height: 600px;
   text-transform: uppercase;
   background: var(--secondary-background-color);
 }
@@ -92,6 +113,10 @@ body {
   border-style: hidden;
 }
 .buttons-portfolio {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+  display: flex;
   line-height: 1.62;
 }
 .buttons-portfolio .button:hover,
@@ -129,19 +154,27 @@ body {
   width: 73px;
 }
 .b-web-sites {
+  margin-left: 8px;
   width: 125px;
 }
 .b-appendices {
+  margin-left: 8px;
   width: 112px;
 }
 .b-design {
+  margin-left: 8px;
   width: 103px;
 }
 .b-marketing {
+  margin-left: 8px;
   width: 130px;
 }
 .hidden-tittle {
   display: none;
+}
+.hero-list {
+  display: flex;
+  justify-content: center;
 }
 .description-title {
   text-transform: uppercase;
@@ -152,11 +185,19 @@ body {
   color: var(--text-color);
 }
 .section-tittle {
+  text-align: center;
   font-size: 36px;
   line-height: 1.16;
 }
+.info-images {
+  display: flex;
+}
 .team-section {
   background-color: var(--button-background-color);
+}
+.list-team {
+  justify-content: center;
+  display: flex;
 }
 .team-block {
   width: 270px;
@@ -177,14 +218,23 @@ body {
   color: var(--text-color);
 }
 .title-portfolio {
+  margin-left: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .text-portfolio {
+  margin-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+}
+.list-portfolio {
+  margin-left: 215px;
+  margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .block-portfolio {
   width: 370px;
