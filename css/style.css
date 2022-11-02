@@ -295,9 +295,6 @@ p {
   background-color: var(--secondary-background-color);
 }
 .list-footer-container {
-  display: block;
-  flex-direction: column;
-  justify-content: space-around;
   padding-top: 20px;
 }
 .footer-contact-list {
