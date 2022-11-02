@@ -16,9 +16,18 @@ body {
   font-size: 14px;
   height: 100%;
 }
-p h3 {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
+}
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 .ul {
   margin: 0;
@@ -26,20 +35,21 @@ p h3 {
   list-style: none;
 }
 .header {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
   height: 80px;
   line-height: 1.14;
   border-bottom: solid #ececec;
   background-color: var(--background-color);
 }
 .header-container {
+  justify-content: space-between;
+  height: 80px;
+  display: flex;
+}
+.nav-container {
   align-items: center;
   display: flex;
 }
 .webstudio-logo {
-  margin-left: 215px;
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
@@ -53,9 +63,10 @@ p h3 {
   color: #000000;
 }
 .header-menu-studio {
-  gap: 50px;
   margin-left: 93px;
+  gap: 50px;
   display: flex;
+  letter-spacing: 0.02em;
 }
 .nav-link {
   letter-spacing: 0.02em;
@@ -76,7 +87,7 @@ p h3 {
 }
 .header-contact-list {
   gap: 50px;
-  margin-right: 215px;
+  align-items: center;
   display: flex;
   letter-spacing: 0.02em;
 }
@@ -86,6 +97,7 @@ p h3 {
   color: var(--text-color);
 }
 .hero-section {
+  text-align: center;
   padding-bottom: 200px;
   margin-left: 15px;
   margin-right: 15px;
@@ -93,7 +105,7 @@ p h3 {
   background: var(--secondary-background-color);
 }
 .hero-tittle {
-  text-align: center;
+  padding-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -179,6 +191,7 @@ p h3 {
   width: 270px;
 }
 .description-title {
+  padding-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.14;
@@ -189,6 +202,7 @@ p h3 {
 }
 .info-tittle {
   margin-top: 94px;
+  padding-bottom: 50px;
 }
 .section-tittle {
   text-align: center;
@@ -209,9 +223,10 @@ p h3 {
   padding-bottom: 50px;
 }
 .list-team {
+  justify-content: center;
   padding-bottom: 94px;
   display: flex;
-  justify-content: center;
+
   gap: 30px;
 }
 .team-block {
@@ -222,13 +237,18 @@ p h3 {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color);
 }
+.img-team {
+  display: block;
+}
 .team-name {
+  margin-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .team-position {
+  margin-top: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -245,7 +265,17 @@ p h3 {
 .block-portfolio {
   width: 370px;
   height: 404px;
-  border: 1px solid var(--border-color);
+}
+.img-portfolio {
+  display: block;
+}
+.content-list-portfolio {
+  padding: 24px 20px;
+  width: 370px;
+  height: 110px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   background-color: var(--background-color);
 }
 .title-portfolio {
@@ -265,9 +295,10 @@ p h3 {
   background-color: var(--secondary-background-color);
 }
 .list-footer-container {
+  display: block;
+  flex-direction: column;
+  justify-content: space-around;
   padding-top: 20px;
-  gap: 9px;
-  margin-left: 215px;
 }
 .footer-contact-list {
   letter-spacing: 0.02em;
@@ -283,10 +314,11 @@ p h3 {
   color: var(--background-color);
 }
 .address-info {
+  padding-bottom: 9px;
   line-height: 1.71;
   font-style: normal;
   color: var(--background-color);
 }
-.button-div {
-  text-align: center;
+.tel-footer {
+  padding-top: 9px;
 }
