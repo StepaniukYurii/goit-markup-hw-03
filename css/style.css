@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --main-text-color: #212121;
   --accent-color: #2196f3;
@@ -25,7 +30,8 @@ p {
 }
 .container {
   width: 1230px;
-  padding: 93px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .ul {
