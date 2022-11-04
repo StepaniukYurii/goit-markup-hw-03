@@ -19,7 +19,6 @@ body {
   background-color: var(--background-color);
   letter-spacing: 0.03em;
   font-size: 14px;
-  height: 100%;
 }
 h1,
 h2,
@@ -29,10 +28,12 @@ p {
   padding: 0;
 }
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
 }
 .ul {
   margin: 0;
@@ -40,14 +41,13 @@ p {
   list-style: none;
 }
 .header {
-  height: 80px;
-  line-height: 1.14;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: solid #ececec;
   background-color: var(--background-color);
 }
 .header-container {
   justify-content: space-between;
-  height: 80px;
   display: flex;
 }
 .nav-container {
@@ -102,15 +102,14 @@ p {
   color: var(--text-color);
 }
 .hero-section {
+  padding: 200px 0;
   text-align: center;
-  padding-bottom: 200px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-top: 200px;
   background: var(--secondary-background-color);
 }
 .hero-tittle {
-  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 696px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -131,7 +130,6 @@ p {
 .buttons-portfolio {
   gap: 8px;
   margin-bottom: 50px;
-  margin-top: 94px;
   justify-content: center;
   display: flex;
   line-height: 1.62;
@@ -159,7 +157,6 @@ p {
   background: var(--accent-color);
 }
 .b-order {
-  margin: 0;
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: 700;
@@ -183,11 +180,13 @@ p {
 .b-marketing {
   width: 130px;
 }
+.description-section {
+  padding-bottom: 0;
+}
 .hidden-tittle {
   display: none;
 }
 .hero-list {
-  margin-top: 109px;
   justify-content: center;
   gap: 30px;
   display: flex;
@@ -196,7 +195,7 @@ p {
   width: 270px;
 }
 .description-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.14;
@@ -206,8 +205,7 @@ p {
   color: var(--text-color);
 }
 .info-tittle {
-  margin-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .section-tittle {
   text-align: center;
@@ -215,7 +213,6 @@ p {
   line-height: 1.16;
 }
 .info-images {
-  margin-bottom: 94px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -224,19 +221,16 @@ p {
   background-color: var(--button-background-color);
 }
 .team-tittle {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .list-team {
   justify-content: center;
-  padding-bottom: 94px;
   display: flex;
-
   gap: 30px;
 }
 .team-block {
   width: 270px;
-  height: 368px;
+  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -269,7 +263,6 @@ p {
 }
 .block-portfolio {
   width: 370px;
-  height: 404px;
 }
 .img-portfolio {
   display: block;
@@ -284,6 +277,7 @@ p {
   background-color: var(--background-color);
 }
 .title-portfolio {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -296,11 +290,10 @@ p {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
   background-color: var(--secondary-background-color);
 }
 .list-footer-container {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer-contact-list {
   letter-spacing: 0.02em;
@@ -316,11 +309,11 @@ p {
   color: var(--background-color);
 }
 .address-info {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   line-height: 1.71;
   font-style: normal;
   color: var(--background-color);
 }
 .tel-footer {
-  padding-top: 9px;
+  margin-top: 9px;
 }
