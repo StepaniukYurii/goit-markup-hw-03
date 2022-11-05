@@ -183,8 +183,17 @@ p {
 .description-section {
   padding-bottom: 0;
 }
-.hidden-tittle {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .hero-list {
   justify-content: center;
@@ -256,7 +265,6 @@ p {
 .list-portfolio {
   flex-basis: calc((100% - 60px) / 3);
   justify-content: center;
-  margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
